@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8" />
@@ -13,15 +14,16 @@
       <form class="form-horizontal">
         <div class="row">
           <div class="col-sm-offset-2">
-            <h1>Create your account</h1>
+            <h1>Create your account</small></h1>
           </div>
         </div> <!-- end heading row /-->
         <div class="row myinput-row">
           <div class="form-group" id="usernameGroup">
-            <label for="user" class="col-sm-2 control-label">Username</label>
+            <label for="username" class="col-sm-2 control-label">Username</label>
             <div class="col-sm-2">
               <input type="text" id="user" class="form-control input-md"
-                  placeholder="myusername" />
+                  placeholder="myusername"
+                  onchange="validateUsername();"/>
               <span id="usernameError" class="control-label hidden-message">
                 Error Placeholder (hidden)
               </span>
@@ -30,10 +32,11 @@
         </div> <!-- end username row /-->
         <div class="row">
           <div class="form-group" id="passwordGroup">
-            <label for="pass" class="col-sm-2 control-label">Password</label>
+            <label for="username" class="col-sm-2 control-label">Password</label>
             <div class="col-sm-2">
               <input type="password" id="pass" class="form-control input-md"
-                  placeholder="mypassword" />
+                  placeholder="mypassword"
+                  onchange="validatePassword();" />
               <span id="passwordError" class="control-label hidden-message">
                 Error Placeholder (hidden)
               </span>
